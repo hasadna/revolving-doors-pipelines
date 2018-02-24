@@ -13,7 +13,7 @@ dump-maya-directors-to-db:
   pipeline:
   - run: load_resource
     parameters:
-      url: data/maya_directors
+      url: https://storage.googleapis.com/knesset-data-pipelines/revolving-doors/data/maya_directors/datapackage.json
       resource: maya_directors
   - run: dump.to_sql
     parameters:
